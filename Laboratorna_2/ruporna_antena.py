@@ -54,7 +54,7 @@ for i in range(1, len(FH)-1):
 
 
 plt.figure(figsize=(12, 6))
-
+plt.savefig('ДС у площині Н.png', dpi=300, bbox_inches='tight')
 plt.plot(theta_deg, F1h, label=r"$F_{1h}(\theta)$")
 plt.plot(theta_deg, FC, label=r"$F_{C}(\theta)$")
 plt.plot(theta_deg, FH, label=r"$F_{H}(\theta)$", color="green")
@@ -123,7 +123,7 @@ for i in range(1, len(FE)-1):
 
 # графік
 plt.figure(figsize=(12, 6))
-
+plt.savefig('ДС у площині Е.png', dpi=300, bbox_inches='tight')
 plt.plot(theta_deg_E, FE, label=r"$F_E(\theta)$", color="green")
 
 plt.axhline(0.707, linestyle="--", color="red")
